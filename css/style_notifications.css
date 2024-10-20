@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.notifications-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.notifications {
+    padding: 20px;
+}
+
+h5 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#notification-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px; 
+    overflow-y: auto; 
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#notification-list li {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #eee;
+}
+
+.alert-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border: solid rgba(109, 29, 11, 0.376) 1px;
+    border-radius: 500px;
+}
+
+.notification-content {
+    flex-grow: 1;
+}
+
+.timestamp {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Scrollbar */
+#notification-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#notification-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#notification-list::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}

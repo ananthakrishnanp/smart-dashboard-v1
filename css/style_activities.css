@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.activities-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.activities {
+    padding: 20px;
+}
+
+h5 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#activity-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px; 
+    overflow-y: auto; 
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#activity-list li {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #eee; 
+    background-color: transparent; 
+}
+
+#activity-list li:last-child {
+    border-bottom: none;
+}
+
+.user-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.activity-content {
+    flex-grow: 1;
+}
+
+.timestamp {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Customize scrollbar */
+#activity-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#activity-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#activity-list::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Logs</title>
+    <link rel="stylesheet" href="./css/auditor.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Factory Status</h1>
+
+        
+        <div class="controls-container">
+            
+            <div class="controls">
+                <div class="pagination-buttons">
+                    <button id="prevBtn" disabled>Previous</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+                
+                
+    
+                <button id="sortBtn">Sort</button>
+
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" placeholder="Start Date" value="2024-04-01">
+
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" placeholder="End Date" value="2024-04-01">
+
+                <button id="downloadCsvBtn">Download</button>
+            </div>
+        </div>
+
+       
+        <div class="status-box">
+            <table id="statusTable">
+                <thead>
+                    <tr>
+                        <th>SL NO</th>
+                        <th>MACHINE ID</th>
+                        <th>MACHINE NAME</th>
+                        <th>START TIME</th>
+                        <th>POWER (KWH)</th>
+                        <th>STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+             <div class="modal" id="sortModal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Sort On</h2>
+
+               
+                <div class="sort-order">
+                    <label>
+                        <input type="radio" name="sortOrder" value="ascending" checked> Ascending
+                    </label>
+                    <label>
+                        <input type="radio" name="sortOrder" value="descending"> Descending
+                    </label>
+                </div>
+
+                <!-- Sort By Fields -->
+                <div class="sort-fields">
+                    <button class="sort-field-btn" data-field="sl_no">SL NO</button>
+                    <button class="sort-field-btn" data-field="machine_id">MACHINE ID</button>
+                    <button class="sort-field-btn" data-field="machine_name">MACHINE NAME</button>
+                    <button class="sort-field-btn" data-field="start_time">START TIME</button>
+                    <button class="sort-field-btn" data-field="power_consumption">POWER</button>
+                    <button class="sort-field-btn" data-field="operational_status">STATUS</button>
+                </div>
+
+                <!-- Done Button -->
+                <button id="sortDoneBtn" class="done-btn">DONE</button>
+            </div>
+        </div>
+        </div>
+
+        
+       
+
+       
+        <script src="./js/auditor.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.action-btn {
+    flex: 1; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: left; 
+}
+
+.action-btn h2 {
+    font-size: 16px;
+    margin: 0; 
+    color: #333;
+    white-space: pre-wrap; 
+}
+
+.action-btn .icon {
+    align-items: end;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease; 
+}
+
+/* Hover effects */
+.action-btn:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn:hover .icon {
+    transform: scale(1.1); 
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .action-btn {
+        padding: 15px;
+    }
+
+    .action-btn h2 {
+        font-size: 14px;
+    }
+
+    .action-btn .icon {
+        width: 30px;
+        height: 30px;
+    }
+}

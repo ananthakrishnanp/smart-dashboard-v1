@@ -1,0 +1,376 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 24px;
+    flex-grow: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Card Header */
+.card-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Main Action Buttons (Factory, Machine, Job Management) */
+.main-action-buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.main-action-buttons .action-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-action-buttons .action-btn h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.main-action-buttons .action-btn .icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.main-action-buttons .action-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Card Header Action Buttons */
+.card-action-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-action-buttons .action-button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.card-action-buttons .action-button:hover {
+    background-color: #005bb5;
+}
+
+/* Modal Action Buttons */
+.modal-action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.modal-action-buttons .action-button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.modal-action-buttons .action-button:hover {
+    background-color: #005bb5;
+}
+
+/* Specific styles for Reset Filters button */
+.modal-action-buttons #reset-btn {
+    background-color: #dc3545;
+}
+
+.modal-action-buttons #reset-btn:hover {
+    background-color: #c82333;
+}
+
+/* Date Selection Styles */
+.date-selection {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.date-selection label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.date-selection input[type="date"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.date-selection input[type="date"]:hover {
+    border-color: #007bff;
+    background-color: #e6f2ff;
+}
+
+/* Table Styles */
+.status-box {
+    overflow-x: auto;
+    
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.table th {
+    text-align: left;
+    padding: 8px;
+    color: #888;
+    font-weight: normal;
+}
+
+.table td {
+    background-color: #f0f0f0;
+    padding: 12px 8px;
+    white-space: nowrap;
+}
+
+.table tr td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.table tr td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #005bb5;
+}
+
+/* Status Labels */
+.status {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+.status-maintenance {
+    background-color: #ffe6e6;
+    color: #cc0000;
+}
+
+.status-active {
+    background-color: #e6ffe6;
+    color: #006600;
+}
+
+.status-idle {
+    background-color: #e6e6e6;
+    color: #666666;
+}
+
+#search-date-btn {
+    background-color: #0066cc; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#search-date-btn:hover {
+    background-color: #005bb5; 
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 450px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Sort and Filter Options */
+.sort-direction,
+.filter-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sort-direction label,
+.filter-options label {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.sort-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.sort-option {
+    background-color: #0066cc;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    height: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+.sort-option:hover {
+    background-color: #005bb5;
+}
+
+.sort-option.active {
+    background-color: #444;
+    color: #fff;
+}
+
+.filter-option {
+    background-color: #e6e6e6;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filter-option.active {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Success and Error Messages */
+.success-message,
+.error-message {
+    display: none; 
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    font-size: 16px;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
